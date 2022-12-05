@@ -1,5 +1,13 @@
 
-header { background:#F1948A;
+@font-face { font-family: "normal";
+            src: url("../fuente/verdana.tff")format("truetype");
+}
+
+@font-face { font-family: "negrita";
+            src: url("../fuente/verdanab.tff") format("truetype");
+}
+
+header {background:#F1948A;
           display: flex;
           justify-content: space-around;
           align-items: center ;
@@ -11,16 +19,18 @@ body {background-color:#FDEBD0;
 
 .titulo { color: white ;
           font-size: 40px;
-          font-family:fantasy;cursive;}
+          font-family:negrita;}
+
+a:hover { color:#FDEBD0;   }
+
 
 .colortitulo {color: black;
               text-decoration: underline;
-              font-family: fantasy, cursive;
+              font-family: negrita;
               text-align:center;
-              font-size:400%;
+              font-size:300%;
               padding: 40px;
-              display: flex;
-              justify-content: center;
+
                             }
 
 .logo {width: 150px;   }
@@ -41,7 +51,10 @@ body {background-color:#FDEBD0;
         justify-content:center;}
 
 nav { background:#F4D03F;
-       display: flex;}
+       width: 100%;
+      font-family: negrita;
+       display: flex;
+     flex-wrap: wrap;}
 
 .enlaces { font-size: 25px;
            font-family: sans-serif;
@@ -52,21 +65,29 @@ nav { background:#F4D03F;
          }
 
 .imagenes { display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .ingredientes { justify-content: center;
-                font-family: cursive;    }
+                font-family: negrita;    }
 
-
+.fuente { font-family: normal; color: grey; align-items: center;
+}
 section { align-items: center;
-background: #F1948A }
+background: #F1948A
+   width: 100%;
+ height: auto; }
+
+.textos { display: flex;
+          flex-wrap: wrap;
+        }
 
 
 .pasoscolor {color: #F4D03F;
              text-decoration: underline;
-               font-size:medium;
-                 font-size:35px }
+                   font-size:35px }
+
 .video { display: flex;
         justify-content: center;
       align-items: center;}
@@ -75,7 +96,8 @@ background: #F1948A }
                 color: white;
                  text-align: center;
                  justify-content: center;
-                 font-size:40px}
+                 font-size:40px
+               font-family: normal; }
 
 .tamaño { width:400px ;
             }
@@ -83,11 +105,10 @@ background: #F1948A }
 footer { display: flex;
           flex-grow: grow;
           justify-content: space-between;
-          align-items: center;
           flex-direction: row;
         background: grey;
        width: 100%;
-     height: auto;}
+     height: 20%;}
 
 
 .iconos {width: 60px;
@@ -104,6 +125,7 @@ footer { display: flex;
 }
 
 .datos{ display: inline-block;
+  flex-grow: grow;
          line-height:5pt;
          font-style: oblique;
         color:#F4D03F;
