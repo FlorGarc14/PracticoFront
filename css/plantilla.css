@@ -7,6 +7,9 @@
             src: url("../fuente/verdanab.tff") format("truetype");
 }
 
+
+
+
 header {background:#F1948A;
           display: flex;
           justify-content: space-around;
@@ -30,12 +33,15 @@ a:hover { color:#FDEBD0;   }
               text-align:center;
               font-size:300%;
               padding: 40px;
+              display: inline-flex;
+              justify-content: space-between;
+              align-items: center;
 
                             }
 
 .logo {width: 150px;   }
 
-.redes1 {         display:table-row;
+.redes1 {  display:table-row;
         justify-content: space-around;
         background: grey;
         flex-direction: row;
@@ -72,12 +78,21 @@ nav { background:#F4D03F;
 .ingredientes { justify-content: center;
                 font-family: negrita;    }
 
-.fuente { font-family: normal; color: grey; align-items: center;
+.fuente { font-family: normal;
+  color: grey;
+  display: inline-block;
+justify-content:center;
+
+
 }
 section { align-items: center;
 background: #F1948A
    width: 100%;
  height: auto; }
+
+ article { display: flex;
+            justify-content: flex-start;
+          align-items: baseline;}
 
 .textos { display: flex;
           flex-wrap: wrap;
@@ -139,3 +154,38 @@ footer { display: flex;
     right:40px;
     border-radius:50px;
     z-index:999;}
+
+
+/* mobile*/
+@media (max-width:700px)
+{
+
+    nav { background-color: green;
+          font-family: sans-serif;
+          font-size: 10px; }
+
+          .aguayo { height: auto;
+          width:  100% ;}
+
+  }
+
+/* tablet */
+@media (max-width: 900px) {
+ body { font-size: 12px
+        }
+
+section { background-color: yellow;
+          font-style: italic;}
+
+   }
+
+
+/* pc escritorio*/
+     @media (min-width: 991px) {
+       body { font-size: 16px;}
+
+.aguayo { display: none; }
+
+
+
+                 }
