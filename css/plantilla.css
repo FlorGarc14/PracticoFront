@@ -27,7 +27,7 @@ body {background-color:#FDEBD0;
 a:hover { color:#FDEBD0;   }
 
 
-.colortitulo {color: black;
+.colortitulo {color: grey;
               text-decoration: underline;
               font-family: negrita;
               text-align:center;
@@ -145,18 +145,32 @@ footer { display: flex;
 
 .redes {  display: flex;
          justify-content: space-between;
+         flex-direction:row;
          align-items: center;
          width: 100px;
 
 }
 
-.datos{ display: inline-block;
-  flex-grow: grow;
-         line-height:5pt;
-         font-style: oblique;
-        color:#F4D03F;
-        text-indent: -20em;
-       }
+
+.mapa  { display: flex;
+        justify-content;
+      width: 20%;
+    height: auto;
+  margin-left: 25px; }
+
+.autor {        display: flex;
+   margin-top: 18px;
+   margin-right: 25px;
+   height: 25%;
+   border: none;
+   outline: none;
+   color: white;
+   font-size: 2.1rem;
+   font-weight: 500;
+   border-radius: 10px;
+   cursor: pointer;
+   background-color: black;    }
+
 .imagenwsp { position:fixed;
     margin-top:13px;
     width:60px;
